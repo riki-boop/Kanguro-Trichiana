@@ -7,7 +7,105 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build:html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Scopri il punto vendita Kanguro di Trichiana in Via Frontin 3: orari, contatti, offerte e informazioni per la tua spesa quotidiana.">
+   <meta name="theme-color" content="#D32F2F">
+   <meta property="og:title" content="Kanguro Trichiana | Supermercato a Borgo Valbelluna">
+   <meta property="og:description" content="La tua spesa quotidiana nel cuore di Borgo Valbelluna">
+   <meta property="og:image" content="https://images.unsplash.com/photo-1578365746837-3904bb141bda?w=1200&h=630&fit=crop">
+   <meta property="og:url" content="https://kanguro-trichiana.vercel.app">
+   <meta property="og:type" content="website">
+   <title>Kanguro Trichiana | Supermercato a Borgo Valbelluna</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23D32F2F'>🦘</text></svg>">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar">
+   <div class="container">
+   <div class="navbar-brand">
+   <span class="logo">🦘 Kanguro</span>
+   </div>
+   <button class="hamburger" id="hamburger">
+   <span></span>
+   <span></span>
+   <span></span>
+   </button>
+   <ul class="nav-menu" id="navMenu">
+   <li><a href="#home">Home</a></li>
+   <li><a href="#punto-vendita">Il punto vendita</a></li>
+   <li><a href="#reparti">Reparti</a></li>
+   <li><a href="#offerte">Offerte</a></li>
+   <li><a href="#concorso">Concorso</a></li>
+   <li><a href="#storia">Chi siamo</a></li>
+   <li><a href="#contatti">Contatti</a></li>
+   <li><a href="#offerte" class="cta-nav">Scopri le offerte</a></li>
+   </ul>
+   </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section id="home" class="hero">
+   <div class="hero-overlay"></div>
+   <div class="hero-content">
+   <h1 class="hero-title fade-in">Kanguro Trichiana</h1>
+   <p class="hero-subtitle fade-in">La tua spesa quotidiana, nel cuore di Borgo Valbelluna</p>
+   <p class="hero-text fade-in">Ti aspettiamo nel nuovo punto vendita Kanguro di Trichiana, con una spesa pensata per unire convenienza, qualità, freschezza e attenzione al territorio.</p>
+   <div class="hero-buttons fade-in">
+   <a href="#offerte" class="btn btn-primary">Scopri le offerte</a>
+   <a href="#contatti" class="btn btn-secondary">Come arrivare</a>
+   <a href="#contatti" class="btn btn-tertiary">Contattaci</a>
+   </div>
+   </div>
+</section>
+
+<!-- ========== ORARI RAPIDI ========== -->
+<section class="orari-rapidi">
+   <div class="container">
+   <div class="orari-grid">
+   <div class="orario-card">
+   <h3>📅 Orari</h3>
+   <p><strong>Lunedì - Sabato:</strong> 08:00 - 20:00</p>
+   <p><strong>Domenica:</strong> 08:30 - 13:00</p>
+   </div>
+   <div class="orario-card">
+   <h3>📍 Indirizzo</h3>
+   <p>Via Frontin 3<br>32026 Trichiana</p>
+   </div>
+   <div class="orario-card">
+   <h3>📞 Contatti</h3>
+   <p><a href="tel:0437194812">0437 1948123</a></p>
+   <p><a href="mailto:trichiana@acil.it">trichiana@acil.it</a></p>
+   </div>
+   </div>
+   <div class="orari-buttons">
+   <a href="tel:0437194812" class="btn-icon">📞 Chiama</a>
+   <a href="https://maps.google.com/?q=Via+Frontin+3,+32026+Trichiana" target="_blank" class="btn-icon">🗺️ Indicazioni</a>
+   <a href="mailto:trichiana@acil.it" class="btn-icon">✉️ Email</a>
+   </div>
+   </div>
+</section>
+
+<!-- ========== IL PUNTO VENDITA ========== -->
+<section id="punto-vendita" class="punto-vendita">
+   <div class="container">
+   <h2>Il Kanguro di Trichiana</h2>
+   <p class="section-subtitle">Un supermercato pensato per la spesa di tutti i giorni, con reparti riforniti, offerte convenienti e un team pronto ad accoglierti con cortesia e disponibilità.</p>
+   
+   <div class="valori-grid">
+   <div class="valore-card slide-up">
+   <div class="valore-icon">💰</div>
+   <h3>Convenienza</h3>
+   <p>Prezzi competitivi e offerte pensate per il tuo portafoglio.</p>
+   </div>
+   <div class="valore_
+
 
     runs-on: ubuntu-latest
 
